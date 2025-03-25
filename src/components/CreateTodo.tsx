@@ -14,7 +14,7 @@ const CreateTodo = ({ userId, onClose, selectedDate }: Props) => {
   const [name, setName] = useState<Todo["name"]>("");
   const [description, setDescription] = useState<Todo["description"]>("");
   const [importance, setImportance] = useState<Todo["importance"]>("");
-  const [date, setDate] = useState<Todo["importance"]>(selectedDate);
+  const [date, setDate] = useState<Todo["date"]>(selectedDate);
 
 
   const createTodo = async (e: React.FormEvent<HTMLFormElement>) => {
